@@ -7,11 +7,9 @@ public:
          for(int i=n-1;i>=0;i-=3){
        minn+=cost[i];
        if(i-1>=0) minn+=cost[i-1];
-       else{
-       // minn+=cost[i-1];
-       }
+      
      }
-if(minn==0) return cost[0];
+//if(minn==0) return cost[0];
 return minn;
 
         
