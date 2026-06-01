@@ -9,7 +9,7 @@ public:
        if(i-1>=0) minn+=cost[i-1];
       
      }
-//if(minn==0) return cost[0];
+if(minn==0) return cost[0];
 return minn;
 
         
