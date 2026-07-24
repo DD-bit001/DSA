@@ -8,13 +8,16 @@ class Solution {
         if(!vis[it]){
             if((traverse(graph,it,vis,pathVis,ans,check))==false){
                 temp=false;
+                return false;
             }
         }
         else if(pathVis[it]){
             temp=false;
+            return false;
         }
          else if(check[it]==0){   
         temp=false;
+        return false;
     }
     }
     if(temp){
