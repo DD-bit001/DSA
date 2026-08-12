@@ -8,7 +8,7 @@ public:
         map<int,int> m;
         while(r<n){
       m[nums[r]]++;
-     while(m[0]>k){
+     if(m[0]>k){
         m[nums[l]]--;
         l++;
      }
