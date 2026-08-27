@@ -10,13 +10,11 @@ public:
         int cnt=0;
         while(r<n){
             if(s[r]=='1') cnt++;
-            while(cnt>k){
+            while(cnt>k||s[l]=='0'){
                 if(s[l]=='1') cnt--;
                 l++;
             }
-             while (l <= r && s[l] == '0' && cnt == k) {
-                l++;
-            }
+         
             if(cnt==k){
                 string temp=s.substr(l,r-l+1);
       if(r-l+1<min_l){
